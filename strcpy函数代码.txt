@@ -12,4 +12,10 @@ char* StrCpy(char* src)
         p[i]=src[i];
     p[i]='\0';//在新的内存空间末尾添加一个'\0'
     return p;//返回新申请的内存空间指针
+    
+    
+    //远程edit
+    
+    
+    
 } 
