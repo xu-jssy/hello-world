@@ -1,0 +1,15 @@
+//实现字符串拷贝函数
+char* StrCpy(char* src)
+{
+    int len=0;//保存字符串数组的长度
+    int i=0;//数组下标
+    char* p=NULL;//创建一个char类型指针用于存放复制后的字符串
+    while(char[i++]!='\0')//求字符串长度
+        len++;
+    p=(char*)malloc((len+1)*sizeof(char));//用malloc申请长度为len+1的内存空间
+    i=0;
+    while(i++<len)//将src字符串逐个字符复制到新申请的内存空间
+        p[i]=src[i];
+    p[i]='\0';//在新的内存空间末尾添加一个'\0'
+    return p;//返回新申请的内存空间指针
+} 
